@@ -1,4 +1,4 @@
-## Requirements:
+## Requirements
 
   ### For backend spring boot application:
     java 22
@@ -13,7 +13,7 @@
 ## Pythond Data Analysis
   location: https://github.com/Johnjojo/Deposco/tree/master/Data%20Analysis
 
-## Instruction:
+## Instructions
   
 ### Step 1 Start the Backend:
   Run Springboot main in java class com.example.demo.DataAnalyticsDashboardApplication
@@ -22,3 +22,62 @@
   In terminal, run command 'ng s' in folder 'dashboard' .
   In your brower, access the application through http://localhost:4200/
   
+## API End Points
+  ### GET http://localhost:8080/totalSale
+    input: none
+    parameters: none
+    response: integer | the total sale amount in dollar of all transaction
+
+  ### GET http://localhost:8080/monthlySale
+    input: none
+    parameters: none
+    response: json array | the total sale amount in dollar of all transaction in each month
+    response json format:
+    [
+      {
+        month: sale month in format 'yyyy-mm',
+        sale: the total sale in dollar for that month
+      }
+    ]
+    response example:
+      [
+      {
+          "month": "2015-12",
+          "sale": 9015
+      },
+      {
+          "month": "2016-01",
+          "sale": 84543
+      },...]
+
+  ### GET http://localhost:8080/monthlySale?limit={ limit }&desc={ desc }
+    input: none
+    parameters: 
+      limit:
+        type: number
+        optional default is 20
+        description: the desired return list size
+      desc:
+        type: boolean | 'true' or false
+         optional default is false
+         description: the sort order of return list by sale quantity. 
+                      If desc=true, it will return a sorted list in descending order. 
+                      If desc=false will return in ascending order. 
+    response: json array | A sorted list of the total sale quantity of each product in all transcations.
+    response json format:
+    [
+      {
+        product: product description,
+        quantity: the total sale quantity for that product
+      }
+    ]
+    response json format:
+    [
+      {
+        "product": "Golf Cart 1/2 18 Holes",
+        "quantity": 22135
+    },
+    {
+        "product": "WE Green Fee",
+        "quantity": 18313
+    },...]
