@@ -1,21 +1,21 @@
-Requirements:
+## Requirements:
 
-  For backend spring boot application:
+  ### For backend spring boot application:
     java 22
     Maven 3.8.6
 
-  Front End App:
+  ### Front End App:
     Node js 10.8.1
   
-  Python Data Analysis
+  ### Python Data Analysis
     Jupyter Notebook
 
-Instruction:
+## Instruction:
   
-Step 1 Start the Backend:
+### Step 1 Start the Backend:
   Run Springboot main in java class com.example.demo.DataAnalyticsDashboardApplication
 
-Step 2 Start the Front End:
+### Step 2 Start the Front End:
   In terminal, run command 'ng s' in folder 'dashboard' .
   In your brower, access the application through http://localhost:4200/
   
