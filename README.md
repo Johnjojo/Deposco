@@ -14,12 +14,17 @@
   location: https://github.com/Johnjojo/Deposco/tree/master/Data%20Analysis
 
 ## Instructions
-  
+
+### Step 0 Clone this project into your favorite IDE
+
 ### Step 1 Start the Backend:
-  Run Springboot main in java class com.example.demo.DataAnalyticsDashboardApplication
+  Run Springboot main in java class com.example.demo.DataAnalyticsDashboardApplication 
+  ( https://github.com/Johnjojo/Deposco/blob/master/src/main/java/com/example/demo/DataAnalyticsDashboardApplication.java )
 
 ### Step 2 Start the Front End:
-  In terminal, run command 'ng s' in folder 'dashboard' .
+  In terminal, run command 'ng s' in folder 'dashboard'.
+  (https://github.com/Johnjojo/Deposco/tree/master/dashboard)
+  
   In your brower, access the application through http://localhost:4200/
   
 ## API End Points
