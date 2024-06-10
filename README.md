@@ -55,11 +55,11 @@
     parameters: 
       limit:
         type: number
-        optional default is 20
+        optional | default is 20
         description: the desired return list size
       desc:
         type: boolean | 'true' or false
-         optional default is false
+         optional | default is false
          description: If desc=true, the response list will be sorted in descending order. 
                       If desc=false the response list will be sorted in ascending order. 
     response: json array | A list of the product and its total sale quantity in all transcations sorted by product sale quantity.
