@@ -50,7 +50,7 @@
           "sale": 84543
       },...]
 
-  ### GET http://localhost:8080/monthlySale?limit={ limit }&desc={ desc }
+  ### GET http://localhost:8080/topSale?limit={ limit }&desc={ desc }
     input: none
     parameters: 
       limit:
@@ -60,10 +60,9 @@
       desc:
         type: boolean | 'true' or false
          optional default is false
-         description: the sort order of return list by sale quantity. 
-                      If desc=true, it will return a sorted list in descending order. 
-                      If desc=false will return in ascending order. 
-    response: json array | A sorted list of the total sale quantity of each product in all transcations.
+         description: If desc=true, the response list will be sorted in descending order. 
+                      If desc=false the response list will be sorted in ascending order. 
+    response: json array | A list of the product and its total sale quantity in all transcations sorted by product sale quantity.
     response json format:
     [
       {
