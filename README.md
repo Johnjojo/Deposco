@@ -10,6 +10,9 @@
   ### Python Data Analysis
     Jupyter Notebook
 
+## Pythond Data Analysis
+  location: https://github.com/Johnjojo/Deposco/tree/master/Data%20Analysis
+
 ## Instruction:
   
 ### Step 1 Start the Backend:
