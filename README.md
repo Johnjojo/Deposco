@@ -6,7 +6,8 @@
 
   ### Front End App:
     Node js 10.8.1
-  
+    Angular CLI
+    
   ### Python Data Analysis
     Jupyter Notebook
 
