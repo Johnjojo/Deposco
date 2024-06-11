@@ -22,7 +22,6 @@ export class TopSaleProductsComponent {
   loadChart!: Function;
   ngOnInit(): void {
     this.loadChart = () => {
-      console.log(this.limit);
       this.http.get<TopSale[]>("http://localhost:8080/topSale?limit=" + this.limit)
         .subscribe(resp => {
           this.chart = createTopSaleChart(resp, this.limit);
