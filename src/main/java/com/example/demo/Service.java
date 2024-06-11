@@ -46,7 +46,6 @@ public class Service {
         List<ProductSale> productSales = dataSource.getProductSales();
         boolean isDesc = desc.orElse(true);
         int rowNumInt = limit.orElse(20);
-        productSales.removeFirst();
         productSales = dataSource.getProductSales();
         if( isDesc)
             return productSales.subList(0,rowNumInt);
